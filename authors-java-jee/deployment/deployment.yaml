@@ -18,7 +18,9 @@ spec:
     spec:
       containers:
       - name: authors
-        image: authors:1
+#        image: authors:1
+        image: us.icr.io/thomas-b-cloud-native-starter/authors:1
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
         livenessProbe:
